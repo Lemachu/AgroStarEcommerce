@@ -157,9 +157,9 @@ MESSAGE_TAGS = {
 }
 
 #SMTP KONFIGURACIJA
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'alemahusic@gmail.com'
-EMAIL_HOST_PASSWORD = 'qbctsmvrkyymjbne'
+EMAIL_HOST = ' '
+EMAIL_PORT = 
+EMAIL_HOST_USER = ' '
+EMAIL_HOST_PASSWORD = ' '
 EMAIL_USE_TLS = True
 
