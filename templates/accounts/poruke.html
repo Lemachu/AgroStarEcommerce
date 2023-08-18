@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-conten padding-y bg">
+{% include 'includes/alerts.html' %}
+    <div class="container">
+        <div class="row">
+        <div class="back-container">
+            <div class="container-fluid front-container">
+                <div class="back-top"></div>
+                <div class="back-main"></div>
+            </div>
+            <div class="container front-container1">
+                <div class="row">
+                    <div class="col-sm-4 contacts">
+                        <div class="contact-table-scroll">
+                            <table class="table table-hover">
+                                <tbody>
+                                    {% for user in users %}
+                                    <tr>
+                                      
+                                                <td><img src="{{ user.userprofile.profile_picture.url }}" alt="user.username slika" width="25" heigh="25" class="profile-image rounded-circle">
+                                                </td>
+                                            
+                                        <td><a href="{% url 'chat' username=user.username %}">{{user.username}}</a></td>
+                                    </tr>
+                                    {% endfor %}
+        
+                                    <!-- end -->
+                                </tbody>
+                            </table>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    </div> <!-- row.// -->
+    </div>
+    
+    
+    </section>
+    <!-- ========================= SECTION CONTENT END// ========================= -->
+    
+{% endblock %}

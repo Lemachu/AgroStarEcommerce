@@ -1,0 +1,17 @@
+<aside class="col-md-3">
+    <!--   SIDEBAR   -->
+    <ul class="list-group">
+        <a class="list-group-item {% if '/accounts/' == request.path %} active{%endif%}" href="{% url 'dashboard' %}"> Dashboard </a>
+        {%if user.is_authenticated%}
+        {% if user.is_prodavac %}
+        <a class="list-group-item {% if '/moja_trgovina/' in request.path %}active{%endif%}" href="{% url 'moja_trgovina' %}"> Moja prodavnica </a>
+        {%endif%}
+        {%endif%}
+        <a class="list-group-item {% if '/my_orders/' in request.path %}active{%endif%}" href="{% url 'my_orders' %}"> Moje narudžbe </a>
+        <a class="list-group-item {% if '/edit_profile/' in request.path %}active{%endif%}" href="{% url 'edit_profile' %}"> Uredi profil </a>
+        <a class="list-group-item {% if '/change_password/' in request.path %}active{%endif%}" href="{% url 'change_password' %}">Promijeni lozinku </a>
+    </ul>
+    <br>
+    <a class="btn btn-light btn-block" href="{% url 'logout' %}"> <i class="fa fa-power-off"></i> <span class="text">Odjavite se</span> </a> 
+    <!--   SIDEBAR .//END   -->
+</aside>

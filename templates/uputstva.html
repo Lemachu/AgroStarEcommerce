@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="team text-center py-5">
+<div class="header my-5">
+    <h1>Često postavljena pitanja</h1>
+    <p class="text-muted">Ako imate poteškoća pri korištenju stranice ovdje možete pogledati neka često postavljena pitanja. Klikom na pitanje otvorit će se podsekcija sa odgovorom.</p>
+</div>
+</section>
+
+<div class="list-group">
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" class="">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Kako da se registrujem? </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse1" style="">			
+			<ol>
+			<li>Korak: Kliknite na "Registrujte se "u gornjem desnom uglu</li>
+            <img src="{% static 'images/banners/1.png' %}" class="img-fluid rounded m-4">
+            <li>Korak: Ispunite svoje podatke u formi koja se pojavi nakon što kliknete na "Regustrujte se"</li>
+            <img src="{% static 'images/banners/3.png' %}" style="width:45%" class="img-fluid rounded m-4">
+            <b><p>NPOMENA: Ako želite prodavati svoje proizvode morate označiti kvačicu kraj Da,registritaj me kao prodavača!</p></b>
+            <img src="{% static 'images/banners/4.png' %}" style="width:45%" class="img-fluid rounded m-4">
+            <li>Korak: Ako ste ispravno izvršili prethodne korake pojavit će se sljedeća poruka:</li> 
+            <img src="{% static 'images/banners/5.png' %}" style="width:45%" class="img-fluid rounded m-4"> 
+            </ol>
+		</div> <!-- collapse -filter-content  .// -->
+	</article>
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" class="collapsed">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Kako da se prijavim?</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse" id="collapse2" style="">
+			<ol>
+                <li>Korak: Kliknite na "Prijavite se "u gornjem desnom uglu</li>
+                <img src="{% static 'images/banners/6.png' %}" class="img-fluid rounded m-4">
+                <li>Korak:Ispunite svoje podatke u formi</li>
+                <img src="{% static 'images/banners/7.png' %}" class="img-fluid rounded m-4">
+                <li>Korak: Ako ste ispravno izvršili prethodne korake otvorit će se Vaš profil i pojavit će se sljedeća poruka:</li>
+                <img src="{% static 'images/banners/8.png' %}" class="img-fluid rounded m-4">
+            </ol>
+		</div>
+	</article>
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse3" class="collapsed" aria-expanded="false">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Kako da dodam proizvode u korpu?</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse" id="collapse3" style="">
+			<ol>
+                <li>Korak: Kliknite na Store u navigacijskoj traci kako biste pregledali proizvode i pronašli koji želite kupiti</li>
+                <img src="{% static 'images/banners/9.png' %}" class="img-fluid rounded m-4">
+                <p>Ako želite neki specifični proizvod možete upisati naziv u pretraživač i kliknuti na ikonicu lupe:</p>
+                <img src="{% static 'images/banners/10.png' %}" class="img-fluid rounded m-4">
+                <li>Korak: Kada pronađete željeni proizvod potrebno je klinuti na Pogledaj više (u primjeru je pretraženo "jagode")</li>
+                <img src="{% static 'images/banners/11.png' %}" class="img-fluid rounded m-4">
+                <li>Korak: Kada se otvori podstranica sa detaljima o proizvodu kliknite na Dodaj u korpu, možete dodati u korpu koliko god proizvoda želite </li>
+                <img src="{% static 'images/banners/12.png' %}" class="img-fluid rounded m-4">
+                <p>U korpi možete povećati ili smanjiti količinu dodanih porizvoda, ako želite obrisati proizvod iz korpe kliknite na button Obriši koji se nalazi desno od proizvoda kojeg želite obrisati</p>
+                <img src="{% static 'images/banners/13.png' %}" class="img-fluid rounded m-4">
+                <li>Korak: Kada završite sa dodavanjem proizvoda kliknite na Checkout sa desne strane stranice korpe:</li>
+                <img src="{% static 'images/banners/14.png' %}" class="img-fluid rounded m-4">
+                <li>Korak: Plaćanje, pogledajte sekciju Kako da kupim proizvod</li>
+            </ol>
+		</div>
+	</article>
+    
+    <article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse4" class="collapsed" aria-expanded="false">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Kako da kupim proizvode?</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse" id="collapse4" style="">
+            <p>Nakon što ste stavili u korpu sve željene proizvode možete ih kupiti. Moguća su tri načina plaćanja proizvoda:</p>
+			<article class="list-group-item">
+                <header class="filter-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse5" class="collapsed" aria-expanded="false">
+                        <i class="icon-control fa fa-chevron-down"></i>
+                        <h6 class="title">Plaćanje preko interneta</h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse5" style="">
+                  <p>sfdsfsd</p>  
+                </div>
+            </article>
+            <article class="list-group-item">
+                <header class="filter-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse6" class="collapsed" aria-expanded="false">
+                        <i class="icon-control fa fa-chevron-down"></i>
+                        <h6 class="title">Plaćanje preuzećem</h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse6" style="">
+                  <p>sfdsfsd</p>  
+                </div>
+            </article>
+            <article class="list-group-item">
+                <header class="filter-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse7" class="collapsed" aria-expanded="false">
+                        <i class="icon-control fa fa-chevron-down"></i>
+                        <h6 class="title">Plaćanje i preuzeće proizvoda lično na tržnici</h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse" id="collapse7" style="">
+                  <p>sfdsfsd</p>  
+                </div>
+            </article>
+		</div>
+	</article>
+    <article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse8" class="collapsed" aria-expanded="false">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Kako da prodajem svoje proizvode?</h6>
+			</a>
+		</header>
+		<div class="filter-content collapse" id="collapse8" style="">
+			
+		</div>
+	</article>
+</div> <!-- list-group.// -->
+<!-- ============================ COMPONENT 1 END .// ================================= -->
+	</aside> <!-- col.// -->
+
+
+
+    <section class="team text-center py-5">
+        <div class="container">
+            <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+          <div class="header my-5">
+            <h1>Imate neko drugo pitanje?</h1>
+            <p class="text-muted">Upoznajte naš tim! Kontaktirajte nas povodom svih nejasnoća koje imate!</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="img-block mb-5">
+                <a href="mailto:alemahusic@gmail.com"><img src="{% static 'images/banners/lema.png' %}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                <div class="content mt-2">
+                  <h4>Alema Husić</h4>
+                  <p class="text-muted">Web Developer</p>
+                </div></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="img-block mb-5">
+                <a href="mailto:yourEmail@domain.com"><img src="{% static 'images/banners/elma.png' %}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                <div class="content mt-2">
+                  <h4>Elma Buljubašić</h4>
+                  <p class="text-muted">Project Manager</p>
+                </div></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="img-block mb-5">
+                <a href="mailto:yourEmail@domain.com"><img src="{% static 'images/banners/azra.png' %}" class="img-fluid  img-thumbnail rounded-circle" alt="image1">
+                <div class="content mt-2">
+                  <h4>Azra Kapic</h4>
+                  <p class="text-muted">Data Analyst</p>
+                </div></a>
+              </div>
+            </div>
+            
+          </div>
+
+        </div><div class="col-3"></div></div>
+        </div>
+      </section>
+      
+</body>
+</html>
+
+{% endblock %}
